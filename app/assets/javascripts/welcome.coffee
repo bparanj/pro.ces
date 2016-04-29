@@ -7,6 +7,6 @@
 jQuery ->
   if $('#processes').length
     update = ->
-      $.get '/processes/list', (list) -> $('#processes').text(list)
+      $.get '/welcome/index', (list) -> $('#processes').text(list)
     setInterval(update, 3000)
     update()
